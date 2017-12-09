@@ -1,3 +1,13 @@
+/*
+    Theme Name: My CV;
+    Theme URI: http://redhatmahbub.me;
+    Author: Redhatmahbub;
+    Author URI: http://redhatmahbu.me;
+    Version: 1.0.0;
+    Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, tenetur voluptas unde consectetur repellat, quasi quaerat similique deleniti mollitia facilis, doloremque quis modi nostrum soluta. Ex temporibus quod provident dignissimos!;
+    Tags: My Cv, Blog Theme, Simple Theme, Portfolio Theme;
+    Text_domain: redhatMahbub;
+*/
 /* base css */
 a:hover{
     text-decoration: none;
@@ -50,8 +60,15 @@ input:-webkit-autofill:focus {
 }
 h1,h2,h3,h4,h5,h6{
     margin: 0;
-    color: #3b3b3b;
+    color: #212121;
 }
 body{
     color: #777777;
+}
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    position: relative;
+    z-index: 10;
+    background: #eee;
 }
