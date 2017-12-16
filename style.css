@@ -45,8 +45,8 @@ img {
 }
 
 /* for section padding less */
-.section_padding{
-    padding: 50px 0;
+.section-heading{
+    padding: 0px 0 50px;
 }
 html,body{
     height: 100%;
@@ -71,4 +71,93 @@ section {
     position: relative;
     z-index: 10;
     background: #eee;
+}
+.white-bg {
+    background-color: #fff;
+}
+.dark-bg {
+    background-color: #212121;
+}
+.progress-title {
+    margin-bottom: 15px;
+}
+.dark-bg h2,h3{
+    color: #fff;
+}
+.progress-wrapper{
+    position: relative;
+    width: 100%;
+    background: #eee;
+    height: 5px;
+    border-radius: 4px;
+    margin-bottom: 45px;
+}
+.progress-line {
+    background: #3949ab;
+    width: 85%;
+    border-radius: 4px;
+    height: 100%;
+    position: absolute;
+}
+.progress-line span{
+    color: #212121;
+    font-size: 16px;
+    position: absolute;
+    top: -30px;
+    right: 0;
+}
+
+.header_area {
+    background-image: url(assets/img/passport.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+.header_area:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.header_area, .header_area div {
+    height: 100%;
+}
+.header_area .tableCell-area,.tableCell-area div{
+    height: auto;
+}
+.table-area {
+    display: table;
+    width: 100%;
+}
+.tableCell-area {
+    display: table-cell;
+    vertical-align: middle;
+}
+.welcome-caption-area {
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+.welcome-caption-area h2 {
+    color: #fff;
+    line-height: 1.25;
+    font-size: 78px;
+    font-weight: 700;
+}
+.welcome-caption-area p {
+    font-size: 26px;
+    font-weight: 300;
+    margin-top: 30px;
+    line-height: 40px;
+}
+nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
 }
