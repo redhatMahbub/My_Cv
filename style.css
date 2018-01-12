@@ -180,6 +180,29 @@ header {
     z-index: 2;
 }
 .welcome-caption-area h2 {
+    animation: texttype 15s infinite, cursor 1s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    /*border-right: 3px solid #fff;*/
+}
+
+@keyframes texttype {
+    0% {
+        width: 0ch;
+    }
+    100% {
+        width: 16ch;
+    }
+}
+/*@keyframes cursor{
+    0% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #fff;
+    }
+}*/
+.welcome-caption-area h2 {
     color: #fff;
     line-height: 1.25;
     font-size: 78px;
@@ -492,8 +515,19 @@ a.welcome-btn::after {
     border: 2px solid #212121;
     border-radius: 100%;
     line-height: 58px;
+    position: relative;
 }
-.single-service-area p {
+.single-service-area i:after {
+    content: '';
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 4px solid #212121;
+    margin: 0 auto;
+    left: -10px;
+    top: -10px;
+}.single-service-area p {
     text-align: center;
     font-size: 14px;
     color: #444;
